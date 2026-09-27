@@ -1,0 +1,19 @@
+# include <stdio.h>
+# include <math.h>
+ int main(){
+ float n,num,a,b,sum=0;
+ int X;
+ scanf("%f",&n);
+ for (num=pow(10,n-1);num<pow(10,n);num++){
+ X=num;
+ do{
+ b=X;
+ X=X%10;
+ a=pow(X,n);
+ sum+=a;
+ X=b/10;
+}while(X>0);
+ if(sum==num){printf("%f\n",num);}
+ sum=0;}
+ return 0;
+}

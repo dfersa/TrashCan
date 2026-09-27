@@ -1,0 +1,26 @@
+# include <stdio.h>
+# include <math.h>
+ main01(){int i,b;
+ 	char a,p[80];
+ 	printf("输入");
+ 	gets(p);
+ 	for(i=0;p[i]!='\0';i++)
+ 	{if(p[i]=='-')printf("fu ");
+	 else b=p[i];
+ 	switch(b)
+ 	{
+ 	case '1':a='a';break;
+ 	case '2':a='b';break;
+ 	case '3':a='c';break;
+ 	case '4':a='d';break;
+ 	case '5':a='e';break;
+ 	case '6':a='f';break;
+ 	case '7':a='g';break;
+	case '8':a='h';break;
+	case '9':a='i';break;
+ 	case '0':a='j';break;
+ 	
+	 }printf("%c",a);
+ 
+ 	
+ }}
